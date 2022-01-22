@@ -1,0 +1,45 @@
+---
+layout: default
+title: lipu nimi
+description: translator of toki pona words and phrases from and into english
+image: /assets/sitelen/nimi.png
+---
+<main>
+<noscript><p class="notice">This site really requires JavaScript, I'm sorry!</p></noscript>
+<script defer src="nimi.js"></script>
+<div class="card row">
+	<div class="col">
+		<div id="lang-selector">
+			<span>
+				<input type="radio" id="auto" name="lang" value="auto" checked>
+				<label id="auto-label" for="auto">Detect Language</label>
+			</span>
+			<span>
+				<input type="radio" id="tp" name="lang" value="tp">
+				<label for="tp">toki pona</label>
+			</span>
+			<span>
+				<input type="radio" id="en" name="lang" value="en">
+				<label for="en">English</label>
+			</span>
+		</div>
+		<textarea id="entry" placeholder="o enable JavaScript" autocapitalize="none" disabled></textarea>
+	</div>
+	<div class="col">
+		<div id="lang-output">
+			<label class="output-lang" id="out-tp">toki pona</label>
+			<label class="output-lang" id="out-en">English</label>
+		</div>
+		<div id="result"></div>
+	</div>
+</div>
+<div class="row">
+	<div class="col">
+		<div id="suggestions"></div>
+	</div>
+	<div class="col">
+		<div id="results"></div>
+	</div>
+</div>
+</main>
+<footer>{% include noka.html %}</footer>
