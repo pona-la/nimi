@@ -4,3 +4,4 @@ email: hel@lcp.world
 url: "https://nimi.pona.la"
 
 remote_theme: pona-la/kule-lipu
+exclude: [bin,Gemfile, Gemfile.lock,LICENSE,README.md]
