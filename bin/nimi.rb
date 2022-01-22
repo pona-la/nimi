@@ -42,5 +42,9 @@ def reversed_json(urls, output)
 	File.write(output, JSON.generate(sin))
 end
 
+create_json(['http://tokipona.org/nimi_pu.txt'], 'nanpa/nimi_pu.json')
+create_json(['http://tokipona.org/nimi_pi_pu_ala.txt'], 'nanpa/nimi_pu_ala.json')
+create_json(['http://tokipona.org/compounds.txt'], 'nanpa/compounds.json')
+
 reversed_json(['http://tokipona.org/nimi_pu.txt', 'http://tokipona.org/nimi_pi_pu_ala.txt', 'http://tokipona.org/compounds.txt'], 'en-tp.json')
 create_json(['http://tokipona.org/nimi_pu.txt', 'http://tokipona.org/nimi_pi_pu_ala.txt', 'http://tokipona.org/compounds.txt'], 'tp-en.json')
